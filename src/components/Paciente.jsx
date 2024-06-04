@@ -6,7 +6,15 @@ const Paciente = ({ paciente }) => {
   const { email, fecha, nombre, propietario, sintomas, _id } = paciente;
 
   const formatearFecha = (fecha) => {
-    const nuevaFecha = new Date(fecha);
+    // Crear el objeto Date utilizando solo la parte de la fecha
+    const partesFecha = fecha.split("-");
+    const nuevaFecha = new Date(
+      parseInt(partesFecha[0], 10), // Año
+      parseInt(partesFecha[1], 10) - 1, // Mes (restar 1 porque los meses en JavaScript son 0-indexados)
+      parseInt(partesFecha[2], 10) // Día
+    );
+
+    // Formatear la fecha en el estilo largo en español (Chile)
     return new Intl.DateTimeFormat("es-CL", { dateStyle: "long" }).format(
       nuevaFecha
     );
