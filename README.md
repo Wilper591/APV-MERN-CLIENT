@@ -1,4 +1,4 @@
-# Administrador de Pacientes de Vetirinaria - FrontEnd
+# Administrador de Pacientes de Veterinaria - FrontEnd
 
 Este proyecto fue realizado con Vite+React y Tailwind para los estilos.
 Accede a la aplicación a través del siguiente enlace:
