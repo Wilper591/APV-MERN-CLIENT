@@ -1,6 +1,5 @@
 import { useState, useEffect, createContext } from "react";
 import clienteAxios from "../config/axios";
-import Alerta from "../components/Alerta";
 
 const AuthContext = createContext();
 
