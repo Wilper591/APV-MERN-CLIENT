@@ -27,7 +27,7 @@ const Paciente = ({ paciente }) => {
         <span className="font-normal normal-case text-black">{nombre}</span>
       </p>
       <p className="font-bold uppercase text-indigo-700 my-2">
-        Pripietario: {""}
+        Propietario: {""}
         <span className="font-normal normal-case text-black">
           {propietario}
         </span>
